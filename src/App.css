@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+}
+:root{
+    --secondary-color: #F59359;
+    --box1-color: #ffffff;
+    --black-light-color: #707070;
+}
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f59359;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+}
+.sidebar .logo{
+    margin-bottom: 30%;
+}
+.sidebar .logo img{
+    width: 60%;
+    margin-top: 20%;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 5%;
+    text-decoration: none;
+
+}
+
+
+.sidebar a.active {
+    background-color: #f4762c;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #f4762c;
+    color: white;
+}
+
+div.content {
+    margin-left: 20%;
+    padding: 1px 16px;
+    height: 100%;
+    padding-top: 1%;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+    text-align: center;
+    float: none;
+}
+}
+div.content h2{
+    font-weight: 500;
+}
+div.content .input-group{
+    width: 50%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.add-icon:hover{
+    cursor: pointer;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+}
+.table{
+    border-color: #ffffff!important;
+}
+th:nth-child(1){
+    color: #f59359;
+}
+tr{
+    background-color:#f4f4f4;
+}
