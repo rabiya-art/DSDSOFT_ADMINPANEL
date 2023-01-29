@@ -5,30 +5,25 @@ export default function Product(props) {
   return (
     <div>
         <h2>{props.title}</h2>
-        <div className='container'>
-            <div className="row">
-                <div className="col8">
+        <div className="d-flex justify-content-around">
+            
             <div className="input-group">
-            <input type="search" className="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <input type="search" className="form-control" placeholder="Search here" aria-label="Search" aria-describedby="search-addon" />
             <span className="input-group-text border-0" id="search-addon">
             <i className="bi bi-search"></i>
             </span>     
-        </div>
-        </div>
-        <div className="col2">
-        <div className="add-icon">
+            </div>
+      
+            <div className="add-icon">
               <button style={{backgroundColor:"#f59359",padding:"10px"}} type="button"><i className="bi bi-plus"></i>Add Item</button>
             </div>
-            </div>
-            <div className="col2">
+  
             <div className="profile">
               <img src={pic} alt=""/>
             </div>
-            </div>
-            </div>
-       
         </div>
-      <div class="table-responsive-lg">
+  
+        <div class="table-responsive-lg">
             <table class="table">
                 <thead>
                     <tr style={{backgroundColor: "white"}}>
@@ -65,7 +60,7 @@ export default function Product(props) {
                     </tr>
                   </tbody>
             </table>
-          </div>
+        </div>
     </div>
   )
 }
