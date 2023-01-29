@@ -84,8 +84,12 @@ div.content h2{
 }
 div.content .input-group{
     width: 50%;
-    border-radius: 100%;
+    border-radius: 160%;
     margin-bottom: 20px;
+}
+.add-icon button{
+    border-radius: 10%;
+    color: #ffffff;
 }
 
 .add-icon:hover{
