@@ -8,11 +8,7 @@ export default function Product(props) {
       <h2>{props.title}</h2>
       <div className="d-flex justify-content-around">
         <div className="input-group">
-          <input
-            type="search"
-            className="form-control"
-            placeholder="Search here"
-            aria-label="Search"
+          <input type="search" className="form-control" placeholder="Search here" aria-label="Search"
             aria-describedby="search-addon"
           />
           <span className="input-group-text border-0" id="search-addon">
@@ -26,8 +22,7 @@ export default function Product(props) {
             type="button"
             onClick={() => {
               navigate("/productForm");
-            }}
-          >
+            }}>
             <i className="bi bi-plus"></i>Add Item
           </button>
         </div>
@@ -41,7 +36,7 @@ export default function Product(props) {
         <table class="table">
           <thead>
             <tr style={{ backgroundColor: "white" }}>
-              <th scope="col" style={{ color: "black!important" }}>
+              <th scope="col" style={{ color: "black" }}>
                 Barcode
               </th>
               <th scope="col">Stock</th>
