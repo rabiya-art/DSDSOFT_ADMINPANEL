@@ -8,7 +8,7 @@
 }
 
 body {
-  width: 100%;
+  inline-size: 100%;
   position: relative;
   background: #ffffff;
 }
@@ -21,20 +21,20 @@ body {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 20%;
+  inline-size: 20%;
   background-color: #f59359;
   position: fixed;
-  height: 100%;
+  block-size: 100%;
   overflow: auto;
   text-align: center;
   font-weight: 600;
 }
 .sidebar .logo {
-  margin-bottom: 30%;
+  margin-block-end: 30%;
 }
 .sidebar .logo img {
-  width: 60%;
-  margin-top: 20%;
+  inline-size: 60%;
+  margin-block-start: 20%;
 }
 
 .sidebar a {
@@ -46,6 +46,7 @@ body {
 
 .sidebar a.active {
   background-color: #f4762c;
+  
   color: white;
 }
 
@@ -54,28 +55,43 @@ body {
   color: white;
 }
 
-div.content {
-  margin-left: 20%;
-  padding: 1px 16px;
-  height: 100%;
-  padding-top: 1%;
+<!-----------------------Product---------------------->
+
+.input-group{
+  padding: 1px 15px;
 }
 
-@media screen and (max-width: 700px) {
+
+
+.table-responsive-lg{
+  padding-inline-start: 5rem;
+}
+.table{
+  padding-inline-start: 10px;
+}
+
+div.content {
+  margin-inline-start: 14%;
+  padding: 1px 16px;
+  block-size: 100%;
+  padding-block-start: 1%;
+}
+
+@media screen and (max-inline-size: 700px) {
   .sidebar {
-    width: 100%;
-    height: auto;
+    inline-size: 100%;
+    block-size: auto;
     position: relative;
   }
   .sidebar a {
-    float: left;
+    float: inline-start;
   }
   div.content {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-inline-size: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
@@ -85,9 +101,9 @@ div.content h2 {
   font-weight: 500;
 }
 div.content .input-group {
-  width: 40%;
+  inline-size: 40%;
   border-radius: 160%;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 .add-icon button {
   border-radius: 13px;
@@ -101,12 +117,13 @@ div.content .input-group {
   cursor: pointer;
 }
 .profile img {
-  width: 50px;
-  height: 46px;
+  inline-size: 50px;
+  block-size: 46px;
 }
 .table {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   border-color: #ffffff !important;
+  inline-size: 100%;
 }
 th:nth-child(1) {
   color: #f59359;
@@ -115,17 +132,34 @@ tr {
   background-color: #f4f4f4;
 }
 
+<!---------------ProductForm--------------------->
+
 .form-control{
   background-color: #f4f4f4;
-  width: 762px;
-  height: 40px;
+  inline-size: 762px;
+  block-size: 40px;
+  justify-content: space-between;
 }
 .btn{
-  height: 40px;
-  width: 762px;
-  margin: 1rem 0rem 1rem 5rem;
+  block-size: 40px;
+  inline-size: 600px;
+  align-items: center;
+  margin: 1rem 4rem 4rem 15rem;
   border-color: #f59359;
   font-weight: bolder;
   font-size: large;
 }
+.form-group{
+  display: flex;
+  padding-inline-start: 80px;
+}
+
+.input-label2{
+  padding-left: 30px;
+}
+
+.productform{
+  padding-inline-start: 10px;
+}
+
 

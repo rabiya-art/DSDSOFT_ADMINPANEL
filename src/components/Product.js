@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import pic from "../img/profile.png";
 import { useNavigate } from "react-router-dom";
@@ -46,6 +47,12 @@ export default function Product(props) {
               <th scope="col">Price</th>
               <th scope="col">Discount</th>
               <th scope="col">Total Price</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+              
+        
+
+
             </tr>
           </thead>
           <tbody>
@@ -58,6 +65,7 @@ export default function Product(props) {
               <td>6000</td>
               <td>10%</td>
               <td>6000</td>
+             
             </tr>
             <tr>
               <th scope="row">#1000</th>
