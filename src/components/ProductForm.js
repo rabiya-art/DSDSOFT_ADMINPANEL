@@ -6,7 +6,6 @@ export default function ProductForm() {
   const navigate = useNavigate();
   return (
     <div className='content'>
-    <div className='heading'></div>
       <h2>Product Form</h2>
       <div className="d-flex justify-content-around top-nav">
         <div className="input-group">

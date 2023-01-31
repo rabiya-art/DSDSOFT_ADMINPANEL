@@ -99,6 +99,7 @@ div.content {
 }
 div.content h2 {
   font-weight: 500;
+  padding-left: 5rem;
 }
 div.content .input-group {
   inline-size: 40%;
@@ -162,4 +163,21 @@ tr {
   padding-inline-start: 10px;
 }
 
+<!---------------Order--------------------->
+div.row .card{
+  width: 274px!important;
+  height: 268px!important;
+  background-color: #3d3636!important;
+}
+div.row h5{
+  color: #f59359;
+  font-weight: 600;
+  font-size: 18px;
+  /* padding: 50px; */
+}
+div.row p{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
 
