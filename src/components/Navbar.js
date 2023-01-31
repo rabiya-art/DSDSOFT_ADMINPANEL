@@ -23,10 +23,10 @@ export default function Navbar() {
           <Link to="/orders">
             <i className="bi bi-cart-fill">&nbsp;&nbsp;&nbsp;Orders</i>
           </Link>
-          <Link to="#payments">
+          <Link to="/payments">
             <i className="bi bi-cash-stack">&nbsp;&nbsp;&nbsp;Payments</i>
           </Link>
-          <Link to="#customers">
+          <Link to="/customers">
             <i className="bi bi-people">&nbsp;&nbsp;&nbsp;Customers</i>
           </Link>
           <Link to="#stock_report">

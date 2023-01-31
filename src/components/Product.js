@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Product(props) {
   const navigate = useNavigate();
   return (
+    <>
     <div className="content">
       <h2>{props.title}</h2>
       <div className="d-flex justify-content-around">
@@ -65,6 +66,8 @@ export default function Product(props) {
               <td>6000</td>
               <td>10%</td>
               <td>6000</td>
+              <td><i className="bi bi-pencil-square" style={{color:"blue"}}></i></td>
+              <td><i className="bi bi-archive-fill" style={{color:"red"}}></i></td>
              
             </tr>
             <tr>
@@ -76,10 +79,25 @@ export default function Product(props) {
               <td>40,000</td>
               <td>50%</td>
               <td>20,000</td>
+              <td><i className="bi bi-pencil-square" style={{color:"blue"}}></i></td>
+              <td><i className="bi bi-archive-fill" style={{color:"red"}}></i></td>
+            </tr>
+            <tr>
+              <th scope="row">#1000</th>
+              <td>22-8-22</td>
+              <td>Sofa</td>
+              <td>10</td>
+              <td>200</td>
+              <td>40,000</td>
+              <td>50%</td>
+              <td>20,000</td>
+              <td><i className="bi bi-pencil-square" style={{color:"blue"}}></i></td>
+              <td><i className="bi bi-archive-fill" style={{color:"red"}}></i></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+    </>
   );
 }
