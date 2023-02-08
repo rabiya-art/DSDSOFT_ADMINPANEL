@@ -3,7 +3,7 @@ import pic from "../img/profile.png";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-export default function Order() {
+export default function Pending() {
   const navigate = useNavigate();
   return (
     <>
@@ -79,6 +79,20 @@ export default function Order() {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <th scope="row">#1345</th>
+              <td>12-8-22</td>
+              <td>Hp PC</td>
+              <td>100</td>
+              <td>160</td>
+            </tr>
+            <tr>
+              <th scope="row">#1345</th>
+              <td>12-8-22</td>
+              <td>Hp PC</td>
+              <td>100</td>
+              <td>160</td>
+            </tr>
             <tr>
               <th scope="row">#1345</th>
               <td>12-8-22</td>

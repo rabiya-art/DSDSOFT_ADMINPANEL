@@ -16,11 +16,12 @@ export default function Product(props) {
           <span className="input-group-text border-0" id="search-addon">
             <i className="bi bi-search"></i>
           </span>
+  
         </div>
 
         <div className="add-icon">
           <button
-            style={{ backgroundColor: "#f59359", padding: "10px" }}
+            style={{ backgroundColor: "#f59359"}}
             type="button"
             onClick={() => {
               navigate("/productForm");
@@ -34,8 +35,8 @@ export default function Product(props) {
         </div>
       </div>
 
-      <div class="table-responsive-lg">
-        <table class="table">
+      <div className="table-responsive-lg">
+        <table className="table">
           <thead>
             <tr style={{ backgroundColor: "white" }}>
               <th scope="col" style={{ color: "black" }}>
@@ -50,10 +51,6 @@ export default function Product(props) {
               <th scope="col">Total Price</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
-              
-        
-
-
             </tr>
           </thead>
           <tbody>
@@ -68,7 +65,6 @@ export default function Product(props) {
               <td>6000</td>
               <td><i className="bi bi-pencil-square" style={{color:"blue"}}></i></td>
               <td><i className="bi bi-archive-fill" style={{color:"red"}}></i></td>
-             
             </tr>
             <tr>
               <th scope="row">#1000</th>

@@ -3,7 +3,7 @@ import pic from "../img/profile.png";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-export default function Order() {
+export default function NewOrders() {
   const navigate = useNavigate();
   return (
     <>
@@ -80,11 +80,18 @@ export default function Order() {
           </thead>
           <tbody>
             <tr>
-              <th scope="row">#1345</th>
-              <td>12-8-22</td>
-              <td>Hp PC</td>
-              <td>100</td>
-              <td>160</td>
+              <th scope="row">#2356</th>
+              <td>12-4-23</td>
+              <td>Bags</td>
+              <td>200</td>
+              <td>1600</td>
+            </tr>
+            <tr>
+              <th scope="row">#2386</th>
+              <td>10-4-23</td>
+              <td>T-shirts</td>
+              <td>200</td>
+              <td>2000</td>
             </tr>
           </tbody>
         </table>

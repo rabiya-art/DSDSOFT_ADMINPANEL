@@ -2,12 +2,12 @@ import React from 'react'
 import pic from "../img/profile.png";
 import { useNavigate } from "react-router-dom";
 
-export default function Customer() {
+export default function Return() {
     const navigate = useNavigate();
   return (
     <>
     <div className="content">
-      <h2>Customer</h2>
+      <h2>Return</h2>
       <div className="d-flex justify-content-around">
         <div className="input-group">
           <input type="search" className="form-control" placeholder="Search here" aria-label="Search"
@@ -28,28 +28,27 @@ export default function Customer() {
         <table class="table">
           <thead>
             <tr style={{ backgroundColor: "white" }}>
-              <th scope="col" style={{ color: "black" }}>Sr.no</th>
-              <th scope="col">Code</th>
-              <th scope="col">Name</th>
-              <th scope="col">Address</th>
-              <th scope="col">Mobile No</th>
+              <th scope="col" style={{ color: "black" }}>Order Id</th>
+              <th scope="col">Product</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Product Price</th>
+              
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>23200</td>
-              <td>Rabiya Pangarkar</td>
-              <td>Bhiwandi</td>
-              <td>+91-987654321</td>
+              <th scope="row">#1345</th>
+              <td>Bag</td>
+              <td>10</td>
+              <td>600</td>
             </tr>
             <tr>
-              <th scope="row">1</th>
-              <td>23200</td>
-              <td>Rabiya Pangarkar</td>
-              <td>Bhiwandi</td>
-              <td>+91-987654321</td>
+              <th scope="row">#1345</th>
+              <td>Bag</td>
+              <td>10</td>
+              <td>600</td>
             </tr>
+            
           </tbody>
         </table>
       </div>

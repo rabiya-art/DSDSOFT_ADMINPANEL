@@ -46,11 +46,11 @@ body {
 
 .sidebar a.active {
   background-color: #f4762c;
-  
   color: white;
 }
 
 .sidebar a:hover:not(.active) {
+  width: max-content;
   background-color: #f4762c;
   color: white;
 }
@@ -110,6 +110,7 @@ div.content .input-group {
   color: #ffffff;
   font-size: large;
   font-weight: bolder;
+  padding: 5px;
 }
 
 .add-icon:hover {
@@ -119,6 +120,7 @@ div.content .input-group {
   inline-size: 50px;
   block-size: 46px;
 }
+
 .table {
   margin-block-start: 2rem;
   border-color: #ffffff !important;

@@ -37,7 +37,7 @@ export default function Navbar() {
           <Link to="#sales_summary">
             <i className="bi bi-graph-up">&nbsp;&nbsp;&nbsp;Sales Summary</i>
           </Link>
-          <Link to="#returns">
+          <Link to="/returns">
             <i className="bi bi-arrow-return-left">&nbsp;&nbsp;&nbsp;Returns</i>
           </Link>
         </div>

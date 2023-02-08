@@ -3,7 +3,7 @@ import pic from "../img/profile.png";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-export default function Order() {
+export default function AllOrders() {
   const navigate = useNavigate();
   return (
     <>

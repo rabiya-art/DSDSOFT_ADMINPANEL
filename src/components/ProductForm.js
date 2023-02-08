@@ -15,14 +15,6 @@ export default function ProductForm() {
           </span>
         </div>
 
-        <div className="add-icon">
-          <button style={{ backgroundColor: "#f59359", padding: "8px" }} type="button" onClick={() => {
-            navigate("/productForm");
-            }}>
-            <i className="bi bi-plus"></i>Add Item
-          </button>
-        </div>
-
         <div className="profile">
           <img src={pic} alt="" />
         </div>
